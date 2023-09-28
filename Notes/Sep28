@@ -1,0 +1,7 @@
+September 28th Class Notes
+
+
+conda create -n bioawk
+
+opens a file in a text editor and it got corrupted
+-how do we find where the file is corrupted by looking at hte missing file
