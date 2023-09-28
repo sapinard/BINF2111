@@ -1,0 +1,49 @@
+#!/bin/bash
+#Question 1
+aminos=("Methionine" "Leucine" "Cysteine" "Alanine" "Valine" "Tyrosine" "Proline")
+for i in "${aminos[@]}"
+do
+    echo $i
+    echo ${#i}
+done
+
+#Question 2
+file=$1
+while read line
+do
+    echo $line
+    echo $line | wc -c
+done < $file
+
+#Question 3
+count=0
+quote="This script will run again"
+until [[ ! $count -lt 10 ]]
+do
+    echo $quote
+    quote=$(echo $quote "and again")
+    ((count++))
+done 
+echo "Until it is done"
+
+#Question 4
+identification() {
+    echo "Sabrina Pinard"
+    echo $(whoami)
+    echo $(date)
+    echo $(pwd)
+}
+identification
+
+#Question 5
+addition() {
+    echo adding $1 to $2 
+    sum=$(($1 + $2))
+    echo equals $sum
+    return 0
+}
+addition 1 5
+addition 6 9
+addition 11 23
+
+#Question 6
