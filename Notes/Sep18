@@ -1,0 +1,50 @@
+Carnegie Rule- apply what you learn outside of class
+AA list and branch- input into csv or tsv
+
+printf '#!/bin/bash\n \n# This is my first comment\n #Wookies rule' >script.sh
+
+>#!/bin/bash
+
+# This is my first comment
+
+.faa = fasta amino acid file
+-AUG: methionine
+
+fastq .fq = Quality control
+
+.tta 
+
+TSV to CSV
+
+sed 's/\+/,/g' 
+cat file.tsv | tr -s '\t'',' >file.tsv
+awk
+
+grep "ATG" example2.fasta --color
+
+grep "ATG.*ATG" example2.fasta --color
+
+grep '\(.*ATG\)\{2\}' example2.fasta > extracted.fasta
+
+chmod compile
+
+Temporary stores
+-string
+-integer
+-constant (pi)
+-array
+
+
+Conditional where height = weight
+[[height -eq weight]] 
+
+
+BONUS use grep to convert a SAM file to a fastq file
+
+
+
+cat samplename.nomapping.sam | grep -v ^@ | awk '{print "@"$1"\n"$10"\n+\n"$11}' > unmapped/samplename.fastq
+
+sequence alignment map file format to save alignment info of short reads mapped against reference sequences
+
+
