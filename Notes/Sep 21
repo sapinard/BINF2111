@@ -1,0 +1,97 @@
+9/21 BINF2111
+
+sed
+awk
+perl
+python
+
+
+sed 's/\t/,/g' file.tsv >file.csv
+
+cat file.tsv | tr -s '\t' ',' >file.csv
+
+
+awk '{gsub("\t", ",": print' file.tsv
+"original" , "Replacement"
+
+perl -pi -e 's/\t/,/g' file.tsv
+(replaces original with i)
+
+perl looks like sed use it just the  same
+
+egrep -o 'Steven.Jose' file.tsv | wc -l
+
+check if it is tsv
+if it is not use sed to check
+
+sed 's/ /,/g' file.txt | more 
+converts to csv
+
+grep "ATG.*ATG" file.fna
+grep '\(.*ATG\)\{3\} test.fna | more
+(fasta nucleotide file)
+faa(fasta amino acid file)
+
+fastq
+nucleotide sequence and quality score separated by +
+
+
+
+Learn Rust C or C++
+
+cat --number doppleganger_names.txt
+
+grab 1 line only
+sed -n '1p' doppleganger_names.txt
+
+can use head
+head -2 doppleganger_names.txt | tail +1
+
+grab 1 line and color david red
+sed -n '1p' doppelganger_names.txt | grep "david" --color
+
+print a range of lines
+sed -n '3,7p' doppelganger_names.txt 
+awk 'NR>=3 && NR<=7' doppelganger_names.txt 
+
+specific lines
+sed -n '3p;7p' file.txt
+
+
+#!/bin/bash
+
+
+num1 =$1
+num2 =$2
+
+if [$num1 = $num2]; then
+        echo "the numbers match"
+else
+        echo "the numbers dont match"
+fi
+
+
+-ge
+-le
+
+READ
+interact with the userr 
+
+for loop 
+
+for i in {1..5} 
+do 
+	echo "Welcome $i times"
+done
+
+for ((c=1; c<=5; c++))
+do 
+	echo "welcome $i times"
+done
+c=1 is the variable
+c<=5 is conditional
+c++ increment statement increases the value of c +1
+
+C++ uses std::cout (standard count)
+
+
